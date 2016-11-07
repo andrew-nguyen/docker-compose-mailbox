@@ -71,6 +71,6 @@ storagebackup:
   links:
     - mysql
   volumes:
-    - "/var/vmail"
+    - "./data/var/vmail:/var/vmail"
+    - "./data/var/spamassassin:/var/spamassassin"
     - "./data/backup:/backup"
-    - "/var/spamassassin"

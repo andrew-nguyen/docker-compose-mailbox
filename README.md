@@ -57,6 +57,8 @@ You will be asked for:
 This will create a file `settings.env`, which is used as the environment variables to send to the docker containers
 in `docker-compose.yml`
 
+Symlink local directories `data/var/vmail` and `data/var/spamassassin` to whatever you want.  These enable persistent storage of respective data.
+
 To run the server, use `docker-compose up -d` (-d is for daemon mode, so it runs in the background)
 
 Once you've run it, set up the DNS entries
